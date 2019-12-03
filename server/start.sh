@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+npm install
 docker run                  \
     --rm                    \
     --name=currency-conversion-service       \
