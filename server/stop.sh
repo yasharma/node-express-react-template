@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker stop saal-author-tool
+docker stop currency-conversion-service
