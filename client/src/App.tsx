@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import Router from './routes';
-
-class App extends Component {
-  render() {
-    return (
+import React from "react";
+import { AppRouter as Router } from "./routes";
+const App: React.FC = () => {
+  return (
+    <div className="app-container">
       <Router />
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;
