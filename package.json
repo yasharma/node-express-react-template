@@ -1,0 +1,9 @@
+{
+  "name": "saal-author-tool",
+  "scripts": {
+    "start": "node server/dist",
+    "build-server": "rm -rf ./dist && server/node_modules/.bin/tsc --p server/tsconfig.json",
+    "build-client": "(cd client && SKIP_PREFLIGHT_CHECK=true NODE_ENV=production  NODE_PATH=src ./node_modules/react-scripts/bin/react-scripts.js build && mv build ../server/dist/client )",
+    "build": "npm run build-server && npm run build-client"
+  }
+}
